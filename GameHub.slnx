@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="gamehub.client/gamehub.client.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+  <Project Path="GameHub.Server/GameHub.Server.csproj" />
+</Solution>
