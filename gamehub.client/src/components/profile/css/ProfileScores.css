@@ -1,0 +1,74 @@
+.profileScores {
+    padding: 30px;
+    background: var(--arcade-surface);
+    border: 2px solid var(--arcade-border);
+    border-radius: 8px;
+    box-shadow: 0 6px 0 #080808;
+}
+
+    .profileScores h2 {
+        margin: 0 0 25px;
+        font-size: 26px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+.scoreFilters {
+    display: grid;
+    grid-template-columns: 1fr 120px;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.scoreFilter {
+    display: flex;
+    flex-direction: column;
+}
+
+    .scoreFilter label {
+        margin-bottom: 7px;
+        font-weight: bold;
+    }
+
+    .scoreFilter select {
+        padding: 10px;
+        border: 2px solid var(--arcade-border);
+        border-radius: 5px;
+        background: #111;
+        color: var(--arcade-text);
+        cursor: pointer;
+    }
+
+        .scoreFilter select:focus {
+            outline: none;
+            border-color: var(--arcade-accent);
+        }
+
+
+/* Score list */
+
+.profileScoreList {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.profileScoreRow {
+    display: grid;
+    grid-template-columns: 35px 1fr 80px 100px;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    background: var(--arcade-surface-light);
+    border-radius: 5px;
+}
+
+    .profileScoreRow strong {
+        text-align: right;
+    }
+
+    .profileScoreRow span:last-child {
+        text-align: right;
+        color: var(--arcade-text-muted);
+        font-size: 13px;
+    }

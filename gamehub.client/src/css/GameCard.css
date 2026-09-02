@@ -1,0 +1,62 @@
+.gameCard {
+    position: relative;
+    display: block;
+    width: 280px;
+    aspect-ratio: 280 / 380;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.15s ease;
+}
+
+    .gameCard:hover {
+        transform: scale(1.07);
+        z-index: 2;
+    }
+
+
+/* Cartridge */
+
+.gameCardCartridge {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: block;
+}
+
+
+/* Game artwork */
+
+.gameCardGameImage {
+    position: absolute;
+    left: 22%;
+    top: 34.6%;
+    width: 55%;
+    height: 46%;
+    object-fit: cover;
+}
+
+
+/* Game name */
+
+.gameCardTitle {
+    position: absolute;
+    left: 15%;
+    width: 60%;
+    height: 15%;
+    left: 18.5%;
+    top: 13%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    pointer-events: none;
+}

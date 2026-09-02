@@ -1,0 +1,74 @@
+.snakeGame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.gameBoard {
+    display: grid;
+    width: 600px;
+    height: 600px;
+    background-image: url("./images/Backround.png");
+    /* Don't stretch the background */
+    background-repeat: repeat;
+    /* Change this to the actual size of your pixel-art tile */
+    background-size: 30px 30px;
+    image-rendering: pixelated;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.snakeSprite {
+    width: 30px;
+    height: 30px;
+    display: block;
+    image-rendering: pixelated;
+}
+
+.snakeBoardContainer {
+    position: relative;
+    width: 100%;
+}
+
+.gameOverOverlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    z-index: 10;
+}
+
+    .gameOverOverlay h2 {
+        margin: 0 0 20px;
+        font-size: 38px;
+    }
+
+    .gameOverOverlay p {
+        margin: 0;
+    }
+
+    .gameOverOverlay strong {
+        margin: 5px 0 25px;
+        font-size: 50px;
+    }
+
+    .gameOverOverlay button {
+        padding: 10px 25px;
+        cursor: pointer;
+    }
+
+.snakeScore {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}

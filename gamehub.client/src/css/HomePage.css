@@ -1,0 +1,12 @@
+.homePage {
+    padding: 50px 30px;
+}
+
+.homeHero {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(350px, 1fr) minmax(350px, 500px);
+    gap: 60px;
+    align-items: center;
+}

@@ -1,0 +1,97 @@
+.footer {
+    width: 100%;
+    margin-top: 40px;
+    padding: 30px 45px 15px;
+    box-sizing: border-box;
+    background: #151515;
+    border-top: 2px solid #333;
+    color: #eee;
+}
+
+.footerContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+/* Branding */
+
+.footerBrand {
+    justify-self: start;
+}
+
+    .footerBrand h2 {
+        margin: 0 0 8px;
+        font-size: 32px;
+        font-weight: bold;
+        letter-spacing: 3px;
+    }
+
+    .footerBrand p {
+        margin: 0;
+        color: #888;
+        font-size: 14px;
+    }
+
+/* Sections */
+
+.footerSection {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+    .footerSection.Navigation {
+        align-items: center;
+        text-align: center;
+    }
+
+    .footerSection.GitHub {
+        align-items: flex-end;
+        text-align: right;
+    }
+
+    /* Put navigation links next to each other */
+
+    .footerSection.Navigation a {
+        display: inline-block;
+    }
+
+    .footerSection.Navigation {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+        .footerSection.Navigation h3 {
+            width: 100%;
+        }
+
+    /* Links */
+
+    .footerSection a {
+        color: #aaa;
+        font-size: 16px;
+        text-decoration: none;
+        transition: color 0.15s ease, transform 0.15s ease;
+    }
+
+        .footerSection a:hover {
+            color: #eee;
+            transform: translateY(-2px);
+        }
+
+/* Bottom bar */
+
+.footerBottom {
+    max-width: 1200px;
+    margin: 25px auto 0;
+    padding-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #333;
+    color: #666;
+    font-size: 13px;
+}

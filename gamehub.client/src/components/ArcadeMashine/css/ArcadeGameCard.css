@@ -1,0 +1,52 @@
+.arcadeGameScreen {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.arcadeGameImage {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.arcadeGamePlaceholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+.arcadeHighScore {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+    .arcadeHighScore h2 {
+        margin: 0 0 10px;
+    }
+
+.arcadeTopScore,
+.arcadeMyScore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8px 0;
+}
+
+    .arcadeTopScore strong,
+    .arcadeMyScore strong {
+        font-size: 20px;
+    }

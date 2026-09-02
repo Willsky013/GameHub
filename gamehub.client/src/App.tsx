@@ -1,58 +1,31 @@
-﻿import { useEffect, useState } from 'react';
-import './App.css';
+﻿// App component
+// - Top-level application router mounting pages and global UI (Header/Footer)
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-interface Forecast {
-    date: string;
-    temperatureC: number;
-    temperatureF: number;
-    summary: string;
-}
+import "./css/App.css"
 
-function App() {
-    const [forecasts, setForecasts] = useState<Forecast[]>();
+import Header from "./components/Header"
+import Footer from "./components/Footer"
 
-    useEffect(() => {
-        populateWeatherData();
-    }, []);
-
-    const contents = forecasts === undefined
-        ? <p><em>Loading... Please refresh once the ASP.NET backend has started. See <a href="https://aka.ms/jspsintegrationreact">https://aka.ms/jspsintegrationreact</a> for more details.</em></p>
-        : <table className="table table-striped" aria-labelledby="tableLabel">
-            <thead>
-                <tr>
-                    <th>Date</th>
-                    <th>Temp. (C)</th>
-                    <th>Temp. (F)</th>
-                    <th>Summary</th>
-                </tr>
-            </thead>
-            <tbody>
-                {forecasts.map(forecast =>
-                    <tr key={forecast.date}>
-                        <td>{forecast.date}</td>
-                        <td>{forecast.temperatureC}</td>
-                        <td>{forecast.temperatureF}</td>
-                        <td>{forecast.summary}</td>
-                    </tr>
-                )}
-            </tbody>
-        </table>;
-
+import HomePage from "./pages/HomePage"
+import GameLibrary from "./pages/GameLibrary"
+import GamePage from "./pages/GamePage"
+import ProfilePage from "./pages/ProfilePage"
+export default function App() {
     return (
-        <div>
-            <h1 id="tableLabel">Weather forecast</h1>
-            <p>This component demonstrates fetching data from the server.</p>
-            {contents}
-        </div>
+        <BrowserRouter>
+
+            <Header />
+
+            <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/games" element={<GameLibrary />} />
+                <Route path="/game/:slug" element={<GamePage />} />
+                <Route path="/profile" element={<ProfilePage />} />
+            </Routes>
+
+            <Footer />
+
+        </BrowserRouter>
     );
-
-    async function populateWeatherData() {
-        const response = await fetch('weatherforecast');
-        if (response.ok) {
-            const data = await response.json();
-            setForecasts(data);
-        }
-    }
 }
-
-export default App;

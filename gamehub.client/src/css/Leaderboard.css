@@ -1,0 +1,34 @@
+.leaderboard {
+    width: 100%;
+    max-width: 600px;
+}
+
+.leaderboardList {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.leaderboardRow {
+    display: grid;
+    grid-template-columns: 30px 1fr 80px;
+    align-items: center;
+    padding: 10px 12px;
+    border-radius: 6px;
+}
+
+.leaderboardRank {
+    font-weight: bold;
+}
+
+.leaderboardScore {
+    text-align: right;
+    font-weight: bold;
+}
+
+.myScores {
+    margin-top: 30px;
+}
+    .myScores h2{
+        font-size: 20px;
+    }

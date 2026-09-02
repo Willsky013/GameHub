@@ -1,0 +1,54 @@
+.banner {
+    width: 100%;
+    min-height: 60px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 0 45px;
+    box-sizing: border-box;
+    background: #151515;
+    border-bottom: 2px solid #333;
+}
+
+.siteName {
+    justify-self: start;
+    margin: 0;
+    font-size: 42px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-decoration: none;
+}
+
+.navButtons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navButton {
+    padding: 4px 12px;
+    border: none;
+    background: transparent;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+    .navButton:hover {
+        transform: scale(1.1);
+    }
+
+.loginRegister {
+    justify-self: end;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

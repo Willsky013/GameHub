@@ -1,0 +1,20 @@
+.gameLibrary {
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 30px;
+}
+
+    .gameLibrary h1 {
+        margin-bottom: 30px;
+        font-size: 34px;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+.gameGrid {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, 280px );
+    justify-content: center;
+    gap: 35px;
+}

@@ -1,0 +1,89 @@
+:root {
+    --arcade-background: #09091c;
+    --arcade-surface: #211535;
+    --arcade-surface-light: #302047;
+    --arcade-border: #45405f;
+    --arcade-pink: #ef4382;
+    --arcade-blue: #315fd1;
+    --arcade-cyan: #42d9ff;
+    --arcade-yellow: #ffe49a;
+    --arcade-text: #f5f5ff;
+    --arcade-text-muted: #aaa8c4;
+    --arcade-shadow: rgba(0, 0, 0, 0.7);
+    --arcade-accent: #42d9ff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    min-height: 100%;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: var(--arcade-background);
+    color: var(--arcade-text);
+}
+
+/* Main application layout */
+
+#root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    width: 100%;
+    flex: 1;
+}
+
+/* Links */
+
+a {
+    color: inherit;
+}
+
+/* Buttons */
+
+button {
+    font: inherit;
+}
+
+/* Forms */
+
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Utility */
+
+.pageContainer {
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+h1,
+h2,
+h3 {
+    letter-spacing: 1px;
+}
+
+button {
+    cursor: pointer;
+}
+
+    button:disabled {
+        cursor: not-allowed;
+    }

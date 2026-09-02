@@ -1,0 +1,102 @@
+.arcadeMachine {
+    position: relative;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.arcadeMachineImage {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Game name / marquee */
+.arcadeMarquee {
+    position: absolute;
+    top: 7%;
+    left: 31.9%;
+    width: 42%;
+    height: 5%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transform: rotate(2deg);
+    overflow: auto;
+
+
+}
+
+/* Screen */
+.arcadeScreen {
+    position: absolute;
+    top: 25.2%;
+    left: 29%;
+    width: 41.5%;
+    height: 23.8%;
+    overflow: hidden;
+    clip-path: polygon( 0% 0%, 92.5% 2%, 100% 100%, 6.5% 100% );
+}
+
+/* Buttons */
+.arcadeButton {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: transform 0.05s ease;
+}
+    .arcadeButton img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    /* Button being pressed */
+    .arcadeButton:active {
+        transform: translateY(2px) scale(0.95);
+    }
+
+/* Previous */
+.arcadePrevious {
+    left: 32%;
+    top: 53%;
+}
+
+/* High score */
+.arcadeScore {
+    left: 38.7%;
+    top: 52.2%;
+}
+
+/* Next */
+.arcadeNext {
+    left: 45.5%;
+    top: 52.8%;
+}
+
+
+/* Joystick */
+.arcadeJoystick {
+    position: absolute;
+    left: 67%;
+    top: 49%;
+    width: 55px;
+    height: 55px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+    .arcadeJoystick img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }

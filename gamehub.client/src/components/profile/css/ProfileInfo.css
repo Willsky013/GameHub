@@ -1,0 +1,87 @@
+.profileInfo {
+    padding: 30px;
+    background: var(--arcade-surface);
+    border: 2px solid var(--arcade-border);
+    border-radius: 8px;
+    box-shadow: 0 6px 0 #080808;
+}
+
+    .profileInfo h1 {
+        margin: 0 0 30px;
+        font-size: 32px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .profileInfo h2 {
+        margin: 0 0 20px;
+        font-size: 22px;
+        text-transform: uppercase;
+    }
+
+    /* Profile fields */
+
+    .profileInfo form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .profileInfo label {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        font-weight: bold;
+    }
+
+    .profileInfo input {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 2px solid var(--arcade-border);
+        border-radius: 5px;
+        background: #111;
+        color: var(--arcade-text);
+        font-size: 16px;
+    }
+
+        .profileInfo input:focus {
+            outline: none;
+            border-color: var(--arcade-accent);
+        }
+
+        .profileInfo input::placeholder {
+            color: #777;
+        }
+
+    /* Save button */
+
+    .profileInfo button {
+        width: 100%;
+        padding: 10px 15px;
+        border: 2px solid var(--arcade-border);
+        border-radius: 5px;
+        background: var(--arcade-surface-light);
+        color: var(--arcade-text);
+        font-weight: bold;
+        cursor: pointer;
+        transition: transform 0.15s ease, background 0.15s ease;
+    }
+
+        .profileInfo button:hover {
+            transform: scale(1.02);
+            background: var(--arcade-accent);
+            color: #111;
+        }
+
+/* Messages */
+
+.profileError {
+    margin-top: 20px;
+    color: #ff5555;
+}
+
+.profileSuccess {
+    margin-top: 20px;
+    color: #55ff55;
+}
