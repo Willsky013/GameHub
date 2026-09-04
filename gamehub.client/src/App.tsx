@@ -13,19 +13,22 @@ import GamePage from "./pages/GamePage"
 import ProfilePage from "./pages/ProfilePage"
 export default function App() {
     return (
-        <BrowserRouter>
-
+        <BrowserRouter basename="/GameHub">
+        
             <Header />
-
+        
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/games" element={<GameLibrary />} />
                 <Route path="/game/:slug" element={<GamePage />} />
                 <Route path="/profile" element={<ProfilePage />} />
+        
+                {/* Any unknown route loads Home */}
+                <Route path="*" element={<HomePage />} />
             </Routes>
-
+        
             <Footer />
-
+        
         </BrowserRouter>
     );
 }
