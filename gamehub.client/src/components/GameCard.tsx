@@ -35,7 +35,7 @@ export default function GameCard({
             {/* Game artwork */}
             {image && (
                 <img
-                    src={image}
+                    src={`${import.meta.env.BASE_URL}${image.replace(/^\/+/, "")}`}
                     alt={title}
                     className="gameCardGameImage"
                 />
